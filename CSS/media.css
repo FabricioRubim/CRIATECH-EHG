@@ -1,0 +1,115 @@
+/* ========== RESPONSIVIDADE ========== */
+
+/* Dispositivos muito pequenos: até 480px (celulares antigos ou compactos) */
+@media (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .logo-eco {
+        height: 80px;
+    }
+
+    .carousel-img {
+        height: 200px;
+    }
+}
+
+/* Dispositivos pequenos: até 768px (smartphones grandes e tablets pequenos) */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .wrapper {
+        padding: 0 1rem;
+    }
+
+    .logo-eco {
+        height: 100px;
+    }
+
+    .carousel-img {
+        height: 250px;
+    }
+}
+
+/* Dispositivos médios: até 1024px (tablets e notebooks pequenos) */
+@media (max-width: 1024px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .carousel-img {
+        height: 300px;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+}
+
+/* Dispositivos grandes: telas médias como notebooks e desktops menores */
+@media (max-width: 1280px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .wrapper {
+        padding: 0 1.5rem;
+    }
+}
+
+/* Ajustes para imagens pesadas */
+img,
+.carousel-img,
+.image-col img {
+    max-width: 100%;
+    height: auto;
+    image-rendering: optimizeQuality;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+/* Evita que imagens sobrecarreguem em conexões lentas */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .image-col img {
+        display: none;
+    }
+
+    .carousel-img {
+        height: auto;
+        max-height: 250px;
+    }
+}
